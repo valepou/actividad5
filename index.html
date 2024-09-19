@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1 id="title"> Registro</h1>
+    <p id="description">Gracias por tomar de tu valioso tiempo para rellenar esto xd</p>
+    <form id="survey-form">
+        <fieldset>
+              <label for="nombre">Nombre :
+           <input type="text" id="name-label" name="Nombre" 
+           placeholder="Ingresa tu nombre" required>
+          </label>
+           </label>|
+           <label for="email">Email:
+           <input type="email" id="email-label" name="Email" 
+            placeholder="Ingresa tu email" required>
+          </label>
+        </label>
+        <label for="edad">Edad(Obligatorio):
+         <input type ="number"name="edad-label" min="13" max="120" placeholder="edad">
+      </label>
+        </label>
+        </fieldset>
+        <fieldset>
+         <label for="dropdown">¿Elige la opccion que describa tu situacion actual?
+            <select name="referencia" id="referencia">
+                <option value="">Selecciona una opccion</option>
+                <option value="1">Estudiante</option>
+                <option value="2">Trabajador(a) de tiempo completo</option>
+                <option value="3">No trabajo</option>
+                <option value="4">Prefiero no decir</option>
+                <option value="5">otro</option>
+           </select>
+          </label>
+          <p>Recomendarias esta pagina a amigos??</p>
+          <input type="radio" required name="driver" id="r1" name="yes"><label for="r1">Nose</label>
+          <input type="radio" required name="driver" id="r2" name="no"><label for="r2">Definitivamente</label>
+          <input type="radio" required name="driver" id="r3" name="no"><label for="r3">Talvez</label>
+         </label>
+      </label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown">¿Cual es tu caracteristica favorita de esta pagina?
+         <select name="referencia" id="referencia" > 
+             <option value="">Selecciona una opccion</option>
+             <option value="1">Desafios</option>
+             <option value="2">Proyectos</option>
+             <option value="3">Comunidad</option>
+             <option value="4">Codigo abierto</option>
+             <option value="5">otro</option>
+        </select>
+       </label>
+       <p>Que le gustaria que mejorara(marque las opcciones correspondientes)</p>
+       <label><input type="checkbox" id="cbox1" value="primer_checkbox"/> Visualizacion de datos</label>
+       <label><input type="checkbox" id="cbox2" value="segundo_checkbox"/> Foro</label>
+       <label><input type="checkbox" id="cbox3" value="tercer_checkbox"/> Cursos</label>
+       <label><input type="checkbox" id="cbox4" value="cuarto_checkbox"/> Videos</label>
+       </label>
+       <label for="story">¿Algun comentario o sugerencia?</label>
+       <textarea id="story" name="story" rows="5"  placeholder="Mensaje"></textarea>
+     </textarea>
+     <input type="submit" value="Enviar">
+      </form>
+</body>
+</html>
